@@ -17,16 +17,6 @@ if [ ! -d $OUTDIR ]
 then
     mkdir -p $OUTDIR
 fi
+    
+    grep -c "CDS" ecoli_MG1655.gff
 
-# load blast module
-module load BLAST+/2.9.0-gompi-2019b
-
-# run blast against local copy of NCBI nucleotide database
-blastn -num_threads 2 -query /usr/local/training/sample.fasta -db /db/ncbiblast/nt/06042020/nt -out $OUTDIR/sample.fa.blastn.${SLURM_JOB_ID}.tsv -outfmt 6 -max_target_seqs 2
-
-# same command as above, but split over multiple lines for improved readability
-# blastn -num_threads 2 -query /usr/local/training/sample.fasta \
-#        -db /db/ncbiblast/nt/06042020/nt \
-#        -out $OUTDIR/sample.fa.blastn.${SLURM_JOB_ID}.tsv \
-#        -outfmt 6 \
-#        -max_target_seqs 2
