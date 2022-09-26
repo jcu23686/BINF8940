@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=BLAST-test		                        # Job name
+#SBATCH --job-name=Homework1		                        # Job name
 #SBATCH --partition=batch		                            # Partition (queue) name
 #SBATCH --ntasks=1			                                # Single task job
 #SBATCH --cpus-per-task=2		                            # Number of cores per task - match this to the num_threads used by BLAST
@@ -10,7 +10,7 @@
 #SBATCH --mail-type=END,FAIL                            # Mail events (BEGIN, END, FAIL, ALL)
 
 #set output directory variable
-OUTDIR="/work/gene8940/jcu23686/homework_1"             # replace cbergman in the following line with your myid
+OUTDIR="/work/gene8940/jcu23686/homework_1"             # output directory variable for homework1
 
 #if output directory doesn't exist, create it
 if [ ! -d $OUTDIR ]
