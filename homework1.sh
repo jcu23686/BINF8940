@@ -18,5 +18,5 @@ then
     mkdir -p $OUTDIR
 fi
    curl -s ftp://ftp.ensemblgenomes.org/pub/bacteria/release-37/gff3/bacteria_0_collection/escherichia_coli_str_k_12_substr_mg1655/Escherichia_coli_str_k_12_substr_mg1655.ASM584v2.37.gff3.gz | gunzip -c > ecoli_MG1655.gff
-    cut -f3 ecoli_MG1655.gff|grep -c "CDS">results.txt         #specifically 3rd column, count CDS in that column
+    cut -f3 ecoli_MG1655.gff|grep -c "CDS" 1> results.txt         #specifically 3rd column, count CDS in that column
 
