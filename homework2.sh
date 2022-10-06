@@ -27,7 +27,7 @@ module load ucsc/359
 curl -s ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/005/845/GCF_000005845.2_ASM584v2/GCF_000005845.2_ASM584v2_genomic.gff.gz | gunzip -c> e_coli_MG1655.gff
 convert2bed --input=gff < e_coli_MG1655.gff > e_coli_MG1655.bed
 grep -i "CDS" e_coli_MG1655.bed > CDS_e_coli_MG1655.bed
-grep CDS e_coli_MG1655.bed > e_coli_MG1655.CDS.bed #might be better
+# grep CDS e_coli_MG1655.bed > e_coli_MG1655.CDS.bed #might be better
 curl -s ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/005/845/GCF_000005845.2_ASM584v2/GCF_000005845.2_ASM584v2_genomic.fna.gz | gunzip -c> e_coli_MG1655.fna
 samtools faidx e_coli_MG1655.fna
 cut -f1,2 e_coli_MG1655.fna.fai > e_coli_MG1655.genome.txt
