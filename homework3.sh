@@ -21,6 +21,7 @@ fi
 cd $OUTDIR
 module load canu/1.9-GCCcore-8.3.0-Java-11
 module load SPAdes/3.14.1-GCC-8.3.0-Python-3.7.4
+module load QUAST/5.0.2-foss-2019b-Python-3.7.4
 
 curl -s ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/005/845/GCF_000005845.2_ASM584v2/GCF_000005845.2_ASM584v2_genomic.fna.gz | gunzip -c> e_coli_MG1655.fna
 canu -p ecoli -d $OUTDIR/canu genomeSize=4.8m useGRID=false -pacbio-raw /work/gene8940/jcu23686/homework3/ecoli_p6_25x.filtered.fastq.gz #I copied the files from instructor_data to my work directory
