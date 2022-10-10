@@ -29,3 +29,4 @@ canu -p ecoli -d $OUTDIR/canu genomeSize=4.8m useGRID=false -pacbio-raw /work/ge
 spades.py -t 6 -k 21,33,55,77 --isolate --memory 40 -1 s_6_1.fastq.gz -2 s_6_2.fastq.gz -o $OUTDIR/spades
 quast.py -t -6 -r e_coli_MG1655.fna $OUTDIR/canu/ecoli.contigs.fasta $OUTDIR/spades/scaffolds.fasta
 nucmer e_coli_MG1655.fna canu/ecoli.contigs.fasta -p $OUTDIR/mummer
+delta-filter -1 $OUTDIR/mummer.delta > $OUTDIR/mummer.1delta
