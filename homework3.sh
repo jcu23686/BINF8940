@@ -28,5 +28,17 @@ curl -s ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/005/845/GCF_000005845.2_A
 canu -p ecoli -d $OUTDIR/canu genomeSize=4.8m useGRID=false -pacbio-raw /work/gene8940/jcu23686/homework3/ecoli_p6_25x.filtered.fastq.gz #I copied the files from instructor_data to my work directory
 spades.py -t 6 -k 21,33,55,77 --isolate --memory 40 -1 s_6_1.fastq.gz -2 s_6_2.fastq.gz -o $OUTDIR/spades
 quast.py -t -6 -r e_coli_MG1655.fna $OUTDIR/canu/ecoli.contigs.fasta $OUTDIR/spades/scaffolds.fasta
-nucmer e_coli_MG1655.fna canu/ecoli.contigs.fasta -p $OUTDIR/mummer
-delta-filter -1 $OUTDIR/mummer.delta > $OUTDIR/mummer.1delta
+
+nucmer e_coli_MG1655.fna canu/ecoli.contigs.fasta -p mummer/ecoli.canu
+delta-filter -1 mummer/ecoli.canu.delta > mummer/mummer.canu.1delta
+show-coords mummer/mummer.canu.1delta
+mummerplot --size large -layout --color -f --png mummer/mummer.canu.1delta -p mummer/ecoli.canu
+
+nucmer e_coli_MG1655.fna spades/scaffolds.fasta -p mummer/ecoli.spades
+delta-filter -1 mummer/ecoli.spades.delta > mummer/mummer.spades.1delta
+show-coords mummer/mummer.spades.1delta
+mummerplot --size large -layout --color -f --png mummer/mummer.spades.1delta -p mummer/ecoli.spades
+
+
+#nucmer e_coli_MG1655.fna canu/ecoli.contigs.fasta -p $OUTDIR/mummer
+#delta-filter -1 $OUTDIR/mummer.delta > $OUTDIR/mummer.1delta
