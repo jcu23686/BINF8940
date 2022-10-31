@@ -31,5 +31,8 @@ kallisto index -i $OUTDIR/ecoli_MG1655_refseq_cds.fa.idx $OUTDIR/ecoli_MG1655_re
 
 for i in SRR5344681 SRR5344682 SRR5344683 SRR5344684
 do
-  kallisto quant -t 6 -b 100 -i $OUTDIR/ecoli_MG1655_refseq_cds.fa.idx -o $i /work/gene8940/instructor_data/${i}_1.fastq.gz /work/gene8940/instructor_data/${i}_2.fastq.gz
+  kallisto quant -t 6 -b 100 -i $OUTDIR/ecoli_MG1655_refseq_cds.fa.idx -o $KALLISTODIR/$i /work/gene8940/instructor_data/${i}_1.fastq.gz /work/gene8940/instructor_data/${i}_2.fastq.gz
 done
+
+source activate R
+R --no-save <$HOME/BINF8940/homework5.r
