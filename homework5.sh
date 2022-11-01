@@ -11,7 +11,7 @@
 
 #set output directory variable
 OUTDIR="/work/gene8940/jcu23686/homework5"             # replace cbergman in the following line with your myid
-KALLISTODIR= "/work/gene8940/jcu23686/kallisto5"
+KALLISTODIR="/work/gene8940/jcu23686/homework5/kallisto5"
 
 #if output directory doesn't exist, create it
 if [ ! -d $OUTDIR ]
