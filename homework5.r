@@ -4,7 +4,7 @@ suppressMessages({
 
 #set input and output dirs
 datapath <- "/work/gene8940/jcu23686/homework5/kallisto5"  # you need to modify this line to match the path made by your BASH script
-resultdir <- "/work/gene8940/jcu23686/homework5/kallisto5"   # you need to modify this line to match the path made by your BASH script
+resultdir <- "/work/gene8940/jcu23686/homework5"   # you need to modify this line to match the path made by your BASH script
 setwd(resultdir)
 
 #create a sample-to-condition metadata object
