@@ -19,7 +19,7 @@ then
     mkdir -p $OUTDIR
 fi
 
-if [ ! -d $KALLISTODIR]
+if [ ! -d $KALLISTODIR ]
 then
   mkdir -p $KALLISTODIR
 fi
