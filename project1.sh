@@ -30,9 +30,12 @@ module load QUAST/5.0.2-foss-2019b-Python-3.7.4
 #quast asm1/assembly/Ash1v1.7.fa.gz
 
 #assembely2ab
-wget https://data.nist.gov/od/ds/ark:/88434/mds2-2578/assemblies-and-benchmarking_results/asm2ab.tar.gz
-tar -xvzf asm2ab.tar.gz
-quast asm2ab/assembly/asm2b/Dovetail_HG002_phase2_scaffolds.fa.gz
+#wget https://data.nist.gov/od/ds/ark:/88434/mds2-2578/assemblies-and-benchmarking_results/asm2ab.tar.gz
+#tar -xvzf asm2ab.tar.gz
+#assembly2a
+quast asm2ab/assembly/asm2a/Dovetail_HG002_phase1_scaffolds.fa.gz
+#assembly2b
+#quast asm2ab/assembly/asm2b/Dovetail_HG002_phase2_scaffolds.fa.gz
 
 #curl -s https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.40_GRCh38.p14/GCF_000001405.40_GRCh38.p14_genomic.fna.gz | gunzip -c> human.fna #data in fasta format
 #curl -s https://s3-us-west-2.amazonaws.com/human-pangenomics/NHGRI_UCSC_panel/HG002/hpp_HG002_NA24385_son_v1/PacBio_HiFi/15kb/m64012_190920_173625.Q20.fastq > HG002.fastq #data in fastq format
