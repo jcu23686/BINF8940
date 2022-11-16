@@ -37,10 +37,17 @@ module load QUAST/5.0.2-foss-2019b-Python-3.7.4
 #assembly2b
 #quast asm2ab/assembly/asm2b/Dovetail_HG002_phase2_scaffolds.fa.gz
 
-#assambly3a
+#assembly3a
 wget https://data.nist.gov/od/ds/ark:/88434/mds2-2578/assemblies-and-benchmarking_results/asm3a.tar.gz
-tar -xvzf asm3a.tar.gz
-quast asm3a/assembly/asm3a/asm.fa.gz
+#tar -xvzf asm3a.tar.gz
+#quast asm3a/assembly/asm3a/asm.fa.gz
+#assembly3bc
+#wget https://data.nist.gov/od/ds/ark:/88434/mds2-2578/assemblies-and-benchmarking_results/asm3bc.tar.gz
+#tar asm3bc.tar.gz
+#assembly3b
+quast asm3bc/assembly/asm3b/pri_asm.fa.gz
+#assembly3c
+quast asm3bc/assembly/asm3c/alt_asm.fa.gz
 
 #curl -s https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.40_GRCh38.p14/GCF_000001405.40_GRCh38.p14_genomic.fna.gz | gunzip -c> human.fna #data in fasta format
 #curl -s https://s3-us-west-2.amazonaws.com/human-pangenomics/NHGRI_UCSC_panel/HG002/hpp_HG002_NA24385_son_v1/PacBio_HiFi/15kb/m64012_190920_173625.Q20.fastq > HG002.fastq #data in fastq format
