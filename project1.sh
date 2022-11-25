@@ -89,8 +89,14 @@ module load QUAST/5.0.2-foss-2019b-Python-3.7.4
 #quast asm9_05ab/assembly/asm9_05a/ha4.pat.ctg.fa.gz
 #wget https://data.nist.gov/od/ds/ark:/88434/mds2-2578/assemblies-and-benchmarking_results/asm9ab.tar.gz
 #tar -xzvf
-quast asm9ab/assembly/asm9a/DFCI_HC.hifiasm.mat.ctg.fa.gz
-quast asm9ab/assembly/asm9b/DFCI_HC.hifiasm.pat.ctg.fa.gz
+#quast asm9ab/assembly/asm9a/DFCI_HC.hifiasm.mat.ctg.fa.gz
+#quast asm9ab/assembly/asm9b/DFCI_HC.hifiasm.pat.ctg.fa.gz
+
+#assembly 10
+#wget https://data.nist.gov/od/ds/ark:/88434/mds2-2578/assemblies-and-benchmarking_results/asm10ab.tar.gz
+#tar -xzvf asm10ab.tar.gz
+quast asm10ab/assembly/asm10a/DFCI_SG.dipasm-hic1a.hap1.scaf.fa.gz
+quast asm10ab/assembly/asm10b/DFCI_SG.dipasm-hic1a.hap2.scaf.fa.gz
 
 
 #curl -s https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.40_GRCh38.p14/GCF_000001405.40_GRCh38.p14_genomic.fna.gz | gunzip -c> human.fna #data in fasta format
