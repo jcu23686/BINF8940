@@ -79,8 +79,8 @@ module load QUAST/5.0.2-foss-2019b-Python-3.7.4
 #assembly 8
 #wget https://data.nist.gov/od/ds/ark:/88434/mds2-2578/assemblies-and-benchmarking_results/asm8ab.tar.gz
 #tar -xzvf asm8ab.tar.gz
-quast asmab8/assembly/asm8a/primary.fasta.gz
-quast asmab8/assembly/asm8b/alts.fasta.gz
+quast asm8ab/assembly/asm8a/primary.fasta.gz
+quast asm8ab/assembly/asm8b/alts.fasta.gz
 
 
 #curl -s https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.40_GRCh38.p14/GCF_000001405.40_GRCh38.p14_genomic.fna.gz | gunzip -c> human.fna #data in fasta format
