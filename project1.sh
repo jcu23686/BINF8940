@@ -66,10 +66,15 @@ module load QUAST/5.0.2-foss-2019b-Python-3.7.4
 
 #assembly6ab
 #wget https://data.nist.gov/od/ds/ark:/88434/mds2-2578/assemblies-and-benchmarking_results/asm6ab.tar.gz
-#xzvf asm6ab.tar.gz
-quast asm6ab/assembly/asm6a/flye.scaffolds.fasta.gz
-quast asm6ab/assembly/asm6b/flye.scaffolds.fasta.gz
+#tar xzvf asm6ab.tar.gz
+#quast asm6ab/assembly/asm6a/flye.scaffolds.fasta.gz
+#quast asm6ab/assembly/asm6b/flye.scaffolds.fasta.gz
 
+#assembly 7
+#wget https://data.nist.gov/od/ds/ark:/88434/mds2-2578/assemblies-and-benchmarking_results/asm7ab.tar.gz
+#tar xzvf asm7ab.tar.gz
+quast asm7ab/assembly/asm7a/flye.scaffolds.fasta.gz
+quast asm7ab/assembly/asm7b/flye.scaffolds.fasta.gz
 
 
 #curl -s https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.40_GRCh38.p14/GCF_000001405.40_GRCh38.p14_genomic.fna.gz | gunzip -c> human.fna #data in fasta format
