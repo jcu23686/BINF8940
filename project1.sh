@@ -56,9 +56,13 @@ module load QUAST/5.0.2-foss-2019b-Python-3.7.4
 #assembly4b
 #wget https://data.nist.gov/od/ds/ark:/88434/mds2-2578/assemblies-and-benchmarking_results/asm4bc.tar.gz
 #tar -xzvf asm4bc.tar.gz
-quast asm4bc/assembly/asm4b/pri_asm_v2.fa.gz
-quast asm4bc/assembly/asm4c/alt_asm_v2.fa.gz
+#quast asm4bc/assembly/asm4b/pri_asm_v2.fa.gz
+#quast asm4bc/assembly/asm4c/alt_asm_v2.fa.gz
 
+#assembly5
+#wget https://data.nist.gov/od/ds/ark:/88434/mds2-2578/assemblies-and-benchmarking_results/asm5.tar.gz
+#tar -xvzf asm5.tar.gz
+quast asm5/assembly/hg002.flye.scaffolds.fasta
 
 #curl -s https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.40_GRCh38.p14/GCF_000001405.40_GRCh38.p14_genomic.fna.gz | gunzip -c> human.fna #data in fasta format
 #curl -s https://s3-us-west-2.amazonaws.com/human-pangenomics/NHGRI_UCSC_panel/HG002/hpp_HG002_NA24385_son_v1/PacBio_HiFi/15kb/m64012_190920_173625.Q20.fastq > HG002.fastq #data in fastq format
