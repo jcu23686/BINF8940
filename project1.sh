@@ -112,7 +112,13 @@ module load QUAST/5.0.2-foss-2019b-Python-3.7.4
 #assembly 13
 #wget https://data.nist.gov/od/ds/ark:/88434/mds2-2578/assemblies-and-benchmarking_results/asm13.tar.gz
 #tar -xzvf asm13.tar.gz
-quast asm13/assembly/JR.wtdbg2.collapsed.ctg.fa.gz
+#quast asm13/assembly/JR.wtdbg2.collapsed.ctg.fa.gz
+
+#assembly 14
+#wget https://data.nist.gov/od/ds/ark:/88434/mds2-2578/assemblies-and-benchmarking_results/asm14ab.tar.gz
+#tar -xzvf asm14ab.tar.gz
+quast asm14ab/assembly/asm14a/NA24385_hpg_pbsq2-ccs_1000-pereg.racon-p2.clustered.hap1.fasta
+quast asm14ab/assembly/asm14b/NA24385_hpg_pbsq2-ccs_1000-pereg.racon-p2.clustered.hap2.fasta
 
 
 #curl -s https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.40_GRCh38.p14/GCF_000001405.40_GRCh38.p14_genomic.fna.gz | gunzip -c> human.fna #data in fasta format
