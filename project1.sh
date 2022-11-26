@@ -29,6 +29,7 @@ module load QUAST/5.0.2-foss-2019b-Python-3.7.4
 #tar -xvzf asm1.tar.gz
 #quast asm1/assembly/Ash1v1.7.fa.gz
 
+#assebmly 2
 #assembly2ab
 #wget https://data.nist.gov/od/ds/ark:/88434/mds2-2578/assemblies-and-benchmarking_results/asm2ab.tar.gz
 #tar -xvzf asm2ab.tar.gz
@@ -37,6 +38,7 @@ module load QUAST/5.0.2-foss-2019b-Python-3.7.4
 #assembly2b
 #quast asm2ab/assembly/asm2b/Dovetail_HG002_phase2_scaffolds.fa.gz
 
+#assembly 3
 #assembly3a
 #wget https://data.nist.gov/od/ds/ark:/88434/mds2-2578/assemblies-and-benchmarking_results/asm3a.tar.gz
 #tar -xvzf asm3a.tar.gz
@@ -49,6 +51,7 @@ module load QUAST/5.0.2-foss-2019b-Python-3.7.4
 #assembly3c
 #quast asm3bc/assembly/asm3c/alt_asm.fa.gz
 
+#assembly 4
 #assembly4a
 #wget https://data.nist.gov/od/ds/ark:/88434/mds2-2578/assemblies-and-benchmarking_results/asm4a.tar.gz
 #tar -xzvf asm4a.tar.gz
@@ -59,12 +62,12 @@ module load QUAST/5.0.2-foss-2019b-Python-3.7.4
 #quast asm4bc/assembly/asm4b/pri_asm_v2.fa.gz
 #quast asm4bc/assembly/asm4c/alt_asm_v2.fa.gz
 
-#assembly5
+#assembly 5
 #wget https://data.nist.gov/od/ds/ark:/88434/mds2-2578/assemblies-and-benchmarking_results/asm5.tar.gz
 #tar -xvzf asm5.tar.gz
 #quast asm5/assembly/hg002.flye.scaffolds.fasta
 
-#assembly6ab
+#assembly 6ab
 #wget https://data.nist.gov/od/ds/ark:/88434/mds2-2578/assemblies-and-benchmarking_results/asm6ab.tar.gz
 #tar xzvf asm6ab.tar.gz
 #quast asm6ab/assembly/asm6a/flye.scaffolds.fasta.gz
@@ -82,7 +85,7 @@ module load QUAST/5.0.2-foss-2019b-Python-3.7.4
 #quast asm8ab/assembly/asm8a/primary.fasta.gz
 #quast asm8ab/assembly/asm8b/alts.fasta.gz
 
-#assembly9
+#assembly 9
 #wget https://data.nist.gov/od/ds/ark:/88434/mds2-2578/assemblies-and-benchmarking_results/asm9_05ab.tar.gz
 #tar -xzvf asm9_05ab.tar.gz
 #quast asm9_05ab/assembly/asm9_05b/ha4.mat.ctg.fa.gz
@@ -125,11 +128,17 @@ module load QUAST/5.0.2-foss-2019b-Python-3.7.4
 #tar -xzvf asm15.tar.gz
 #quast asm15/assembly/JHU_HG002_v1.fa
 
-#assembly16
+#assembly 16
 #wget https://data.nist.gov/od/ds/ark:/88434/mds2-2578/assemblies-and-benchmarking_results/asm16ab.tar.gz
 #tar -xzvf asm16.tar.gz
-quast asm16ab/assembly/asm16a/falcon_unzip_polished_pri.fasta
-quast asm16ab/assembly/asm16b/falcon_unzip_polished_alt.fasta
+#quast asm16ab/assembly/asm16a/falcon_unzip_polished_pri.fasta
+#quast asm16ab/assembly/asm16b/falcon_unzip_polished_alt.fasta
+
+#assembly 17
+#wget https://data.nist.gov/od/ds/ark:/88434/mds2-2578/assemblies-and-benchmarking_results/asm17ab.tar.gz
+#tar -xzvf asm17ab.tar.gz
+quast asm17ab/assembly/asm17a/hap1.fa
+quast asm17ab/assembly/asm17b/hap2.fa
 
 
 #curl -s https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.40_GRCh38.p14/GCF_000001405.40_GRCh38.p14_genomic.fna.gz | gunzip -c> human.fna #data in fasta format
