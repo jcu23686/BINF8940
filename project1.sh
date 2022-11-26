@@ -104,11 +104,15 @@ module load QUAST/5.0.2-foss-2019b-Python-3.7.4
 #quast asm11ab/assembly/asm11a/DFCI_SG.dipasm-hic1a.hap1.scaf.fa.gz
 #quast asm11ab/assembly/asm11b/DFCI_SG.dipasm-hic1a.hap2.scaf.fa.gz
 
-#assembly12
+#assembly 12
 #wget https://data.nist.gov/od/ds/ark:/88434/mds2-2578/assemblies-and-benchmarking_results/asm12.tar.gz
 #tar -xzvf asm12.tar.gz
-quast asm12/assembly/NECAT_contigs.fasta
+#quast asm12/assembly/NECAT_contigs.fasta
 
+#assembly 13
+#wget https://data.nist.gov/od/ds/ark:/88434/mds2-2578/assemblies-and-benchmarking_results/asm13.tar.gz
+#tar -xzvf asm13.tar.gz
+quast asm13/assembly/JR.wtdbg2.collapsed.ctg.fa.gz
 
 
 #curl -s https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.40_GRCh38.p14/GCF_000001405.40_GRCh38.p14_genomic.fna.gz | gunzip -c> human.fna #data in fasta format
