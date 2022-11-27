@@ -148,8 +148,14 @@ module load QUAST/5.0.2-foss-2019b-Python-3.7.4
 #assembly 19
 #wget https://data.nist.gov/od/ds/ark:/88434/mds2-2578/assemblies-and-benchmarking_results/asm19ab.tar.gz
 #tar -xzvf asm19ab.tar.gz
-quast asm19ab/assembly/asm19a/canu.contigs.fasta.gz
-quast asm19ab/assembly/asm19b/canu.contigs.fasta.gz
+#quast asm19ab/assembly/asm19a/canu.contigs.fasta.gz
+#quast asm19ab/assembly/asm19b/canu.contigs.fasta.gz
+
+#assembly 20
+#https://data.nist.gov/od/ds/ark:/88434/mds2-2578/assemblies-and-benchmarking_results/asm20ab.tar.gz
+#tar -xzvf asm20ab.tar.gz
+quast asm20ab/assembly/asm20a/peregrine.contigs.fasta.gz
+quast asm20ab/assembly/asm20b/peregrine.contigs.fasta.gz
 
 
 
