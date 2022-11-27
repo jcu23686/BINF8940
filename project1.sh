@@ -137,8 +137,14 @@ module load QUAST/5.0.2-foss-2019b-Python-3.7.4
 #assembly 17
 #wget https://data.nist.gov/od/ds/ark:/88434/mds2-2578/assemblies-and-benchmarking_results/asm17ab.tar.gz
 #tar -xzvf asm17ab.tar.gz
-quast asm17ab/assembly/asm17a/hap1.fa
-quast asm17ab/assembly/asm17b/hap2.fa
+#quast asm17ab/assembly/asm17a/hap1.fa
+#quast asm17ab/assembly/asm17b/hap2.fa
+
+#assembly 18
+#wget https://data.nist.gov/od/ds/ark:/88434/mds2-2578/assemblies-and-benchmarking_results/asm18.tar.gz
+#tar -xzvf asm18.tar.gz
+quast asm18/assembly/HPRC_HG002_nanopore_ul4_shasta_pepper_hirise_scaffolds.fa
+
 
 
 #curl -s https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.40_GRCh38.p14/GCF_000001405.40_GRCh38.p14_genomic.fna.gz | gunzip -c> human.fna #data in fasta format
