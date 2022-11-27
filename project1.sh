@@ -152,11 +152,15 @@ module load QUAST/5.0.2-foss-2019b-Python-3.7.4
 #quast asm19ab/assembly/asm19b/canu.contigs.fasta.gz
 
 #assembly 20
-#https://data.nist.gov/od/ds/ark:/88434/mds2-2578/assemblies-and-benchmarking_results/asm20ab.tar.gz
+#wget https://data.nist.gov/od/ds/ark:/88434/mds2-2578/assemblies-and-benchmarking_results/asm20ab.tar.gz
 #tar -xzvf asm20ab.tar.gz
-quast asm20ab/assembly/asm20a/peregrine.contigs.fasta.gz
-quast asm20ab/assembly/asm20b/peregrine.contigs.fasta.gz
+#quast asm20ab/assembly/asm20a/peregrine.contigs.fasta.gz
+#quast asm20ab/assembly/asm20b/peregrine.contigs.fasta.gz
 
+#assembly 21
+#wget https://data.nist.gov/od/ds/ark:/88434/mds2-2578/assemblies-and-benchmarking_results/asm21.tar.gz
+#tar -xzvf asm21.tar.gz
+quast asm21/assembly/asm21/HPRC_HG002.hic1_hic2.salsa.fasta
 
 
 
