@@ -177,9 +177,14 @@ module load QUAST/5.0.2-foss-2019b-Python-3.7.4
 #asembly 24
 #wget https://data.nist.gov/od/ds/ark:/88434/mds2-2578/assemblies-and-benchmarking_results/HG002-cur.20211005.tar.gz
 #tar -xzvf HG002-cur.20211005.tar.gz
-quast HG002-cur.20211005/assembly/HG002.mat.cur.20211005.fasta.gz
-quast HG002-cur.20211005/assembly/HG002.pat.cur.20211005.fasta.gz
+#quast HG002-cur.20211005/assembly/HG002.mat.cur.20211005.fasta.gz
+#quast HG002-cur.20211005/assembly/HG002.pat.cur.20211005.fasta.gz
 
+#assembly 25
+#wget https://data.nist.gov/od/ds/ark:/88434/mds2-2578/assemblies-and-benchmarking_results/HG002-HPRC.tar.gz
+#tar -xzvf HG002-HPRC.tar.gz
+quast HG002-HPRC/assembly/HG002.mat.gap_filled_scaff.cleaned.fa.gz
+quast HG002-HPRC/assembly/HG002.pat.gap_filled_scaff.cleaned.fa.gz
 
 #curl -s https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.40_GRCh38.p14/GCF_000001405.40_GRCh38.p14_genomic.fna.gz | gunzip -c> human.fna #data in fasta format
 #curl -s https://s3-us-west-2.amazonaws.com/human-pangenomics/NHGRI_UCSC_panel/HG002/hpp_HG002_NA24385_son_v1/PacBio_HiFi/15kb/m64012_190920_173625.Q20.fastq > HG002.fastq #data in fastq format
