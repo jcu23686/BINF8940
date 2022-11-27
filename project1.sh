@@ -143,7 +143,14 @@ module load QUAST/5.0.2-foss-2019b-Python-3.7.4
 #assembly 18
 #wget https://data.nist.gov/od/ds/ark:/88434/mds2-2578/assemblies-and-benchmarking_results/asm18.tar.gz
 #tar -xzvf asm18.tar.gz
-quast asm18/assembly/HPRC_HG002_nanopore_ul4_shasta_pepper_hirise_scaffolds.fa
+#quast asm18/assembly/HPRC_HG002_nanopore_ul4_shasta_pepper_hirise_scaffolds.fa
+
+#assembly 19
+#wget https://data.nist.gov/od/ds/ark:/88434/mds2-2578/assemblies-and-benchmarking_results/asm19ab.tar.gz
+#tar -xzvf asm19ab.tar.gz
+quast asm19ab/assembly/asm19a/canu.contigs.fasta.gz
+quast asm19ab/assembly/asm19b/canu.contigs.fasta.gz
+
 
 
 
